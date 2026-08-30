@@ -1,0 +1,28 @@
+{
+  "tracks": [
+    {
+      "id": "thriller_dark_drone",
+      "title": "Триллер / Напряжение (Dark Drone)",
+      "filename": "thriller_drone.mp3",
+      "category": "thriller",
+      "duration": 30.0,
+      "filter": "aevalsrc=sin(110*2*PI*t)*0.25+sin(113*2*PI*t)*0.25+sin(55*2*PI*t)*0.3:d=30"
+    },
+    {
+      "id": "comedy_quirky_beat",
+      "title": "Комедия / Сторитайм (Quirky Pulse)",
+      "filename": "comedy_quirky.mp3",
+      "category": "comedy",
+      "duration": 30.0,
+      "filter": "aevalsrc=(sin(440*2*PI*t)*gt(mod(t\\,0.5)\\,0.4)*0.2)+(sin(220*2*PI*t)*gt(mod(t\\,1.0)\\,0.8)*0.25):d=30"
+    },
+    {
+      "id": "retro_chiptune_loop",
+      "title": "Ретро 8-bit / Чиптюн (Pixel Beat)",
+      "filename": "retro_8bit.mp3",
+      "category": "retro",
+      "duration": 30.0,
+      "filter": "aevalsrc=(sin(523*2*PI*t)*gt(mod(t\\,0.25)\\,0.18)*0.15)+(sin(659*2*PI*t)*gt(mod(t+0.125\\,0.25)\\,0.18)*0.15):d=30"
+    }
+  ]
+}
